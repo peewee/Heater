@@ -12,9 +12,35 @@
 		3D5CB5EF1CD34C3F003F5AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CB5ED1CD34C3F003F5AA9 /* Main.storyboard */; };
 		3D5CB5F11CD34C3F003F5AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CB5F01CD34C3F003F5AA9 /* Assets.xcassets */; };
 		3D5CB5F41CD34C3F003F5AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CB5F21CD34C3F003F5AA9 /* LaunchScreen.storyboard */; };
+		3D5CB5FC1CD34CB4003F5AA9 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3D5CB5FB1CD34CB4003F5AA9 /* Cartfile */; };
+		3D5F72DC1CD44F9D00B8AE88 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D249A2B1CD44BEF003F3C31 /* AFNetworking.framework */; };
+		3D5F72DD1CD44F9D00B8AE88 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D249A2B1CD44BEF003F3C31 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D5F72DE1CD44F9D00B8AE88 /* ParticleDeviceSetupLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D249A2C1CD44BEF003F3C31 /* ParticleDeviceSetupLibrary.framework */; };
+		3D5F72DF1CD44F9D00B8AE88 /* ParticleDeviceSetupLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D249A2C1CD44BEF003F3C31 /* ParticleDeviceSetupLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D5F72E01CD44F9D00B8AE88 /* ParticleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D249A2D1CD44BEF003F3C31 /* ParticleSDK.framework */; };
+		3D5F72E11CD44F9D00B8AE88 /* ParticleSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D249A2D1CD44BEF003F3C31 /* ParticleSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3D5F72E21CD44F9D00B8AE88 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3D5F72E11CD44F9D00B8AE88 /* ParticleSDK.framework in Embed Frameworks */,
+				3D5F72DF1CD44F9D00B8AE88 /* ParticleDeviceSetupLibrary.framework in Embed Frameworks */,
+				3D5F72DD1CD44F9D00B8AE88 /* AFNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3D249A2B1CD44BEF003F3C31 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		3D249A2C1CD44BEF003F3C31 /* ParticleDeviceSetupLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParticleDeviceSetupLibrary.framework; path = Carthage/Build/iOS/ParticleDeviceSetupLibrary.framework; sourceTree = "<group>"; };
+		3D249A2D1CD44BEF003F3C31 /* ParticleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParticleSDK.framework; path = Carthage/Build/iOS/ParticleSDK.framework; sourceTree = "<group>"; };
 		3D5CB5E61CD34C3F003F5AA9 /* Heat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5CB5E91CD34C3F003F5AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D5CB5EB1CD34C3F003F5AA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +48,7 @@
 		3D5CB5F01CD34C3F003F5AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5CB5F31CD34C3F003F5AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D5CB5F51CD34C3F003F5AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5CB5FB1CD34CB4003F5AA9 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5F72E01CD44F9D00B8AE88 /* ParticleSDK.framework in Frameworks */,
+				3D5F72DE1CD44F9D00B8AE88 /* ParticleDeviceSetupLibrary.framework in Frameworks */,
+				3D5F72DC1CD44F9D00B8AE88 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +68,10 @@
 		3D5CB5DD1CD34C3F003F5AA9 = {
 			isa = PBXGroup;
 			children = (
+				3D249A2B1CD44BEF003F3C31 /* AFNetworking.framework */,
+				3D249A2C1CD44BEF003F3C31 /* ParticleDeviceSetupLibrary.framework */,
+				3D249A2D1CD44BEF003F3C31 /* ParticleSDK.framework */,
+				3D5CB5FB1CD34CB4003F5AA9 /* Cartfile */,
 				3D5CB5E81CD34C3F003F5AA9 /* Heat */,
 				3D5CB5E71CD34C3F003F5AA9 /* Products */,
 			);
@@ -74,6 +108,7 @@
 				3D5CB5E21CD34C3F003F5AA9 /* Sources */,
 				3D5CB5E31CD34C3F003F5AA9 /* Frameworks */,
 				3D5CB5E41CD34C3F003F5AA9 /* Resources */,
+				3D5F72E21CD44F9D00B8AE88 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +131,7 @@
 				TargetAttributes = {
 					3D5CB5E51CD34C3F003F5AA9 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 83GKP693FA;
 					};
 				};
 			};
@@ -124,6 +160,7 @@
 			files = (
 				3D5CB5F41CD34C3F003F5AA9 /* LaunchScreen.storyboard in Resources */,
 				3D5CB5F11CD34C3F003F5AA9 /* Assets.xcassets in Resources */,
+				3D5CB5FC1CD34CB4003F5AA9 /* Cartfile in Resources */,
 				3D5CB5EF1CD34C3F003F5AA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +288,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Heat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.woolybeach.Heat;
@@ -262,6 +305,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Heat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.woolybeach.Heat;
@@ -288,6 +337,7 @@
 				3D5CB5FA1CD34C3F003F5AA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
